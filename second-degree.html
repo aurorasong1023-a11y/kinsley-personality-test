@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2nd Degree Personality Investigation - Adapter Category</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="test-panel" aria-labelledby="page-title">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">2nd Degree Personality Investigation</p>
+            <h1 id="page-title">Adapter Category</h1>
+          </div>
+          <div class="progress-readout" aria-live="polite">
+            <span id="progress-count">1 / 24</span>
+          </div>
+        </header>
+
+        <div class="progress-track" aria-hidden="true">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+
+        <section id="question-view" class="question-view">
+          <div class="statement-wrap">
+            <p id="question-kicker" class="question-kicker">Question 1</p>
+            <h2 id="question-text"></h2>
+          </div>
+
+          <fieldset class="scale-group" aria-labelledby="question-text">
+            <legend class="sr-only">Choose your response</legend>
+            <div class="scale-labels" aria-hidden="true">
+              <span>Disagree</span>
+              <span>Agree</span>
+            </div>
+            <div id="answer-options" class="answer-options"></div>
+          </fieldset>
+
+          <div class="actions">
+            <button id="back-btn" class="ghost-btn" type="button">Back</button>
+            <button id="next-btn" class="primary-btn" type="button" disabled>Next</button>
+          </div>
+        </section>
+
+        <section id="result-view" class="result-view" hidden>
+          <div class="result-header">
+            <p class="eyebrow">Adapter Subtype</p>
+            <p id="result-code" class="result-code"></p>
+            <h2 id="result-title">The Calibrated Adapter</h2>
+          </div>
+
+          <div class="profile-grid">
+            <article class="profile-copy">
+              <p id="result-summary"></p>
+              <ul id="result-bullets"></ul>
+            </article>
+          </div>
+
+          <div class="reveal-panel">
+            <button id="reveal-btn" class="primary-btn" type="button">Reveal Study Note</button>
+            <div id="study-note" class="study-note" hidden>
+              <h3>What this demonstrates</h3>
+              <p>
+                This second test uses familiar personality-test signals to make a broad profile feel more
+                tailored. The questions are themed around common motivation patterns, while the result still
+                relies on statements many people can recognize in themselves.
+              </p>
+              <p>
+                For the study, compare how participants rate this second-degree profile against the first result.
+              </p>
+            </div>
+          </div>
+
+          <div class="actions">
+            <a class="ghost-btn link-btn" href="index.html">Back to Kinsley Test</a>
+            <button id="restart-btn" class="primary-btn" type="button">Retake</button>
+          </div>
+        </section>
+      </section>
+
+      <aside class="study-rail" aria-label="Second-degree response pattern" hidden>
+        <div class="dial-visual" aria-hidden="true">
+          <div class="dial-ring"></div>
+          <div class="dial-needle"></div>
+          <div class="dial-center"></div>
+        </div>
+        <h2>Adapter Pattern</h2>
+        <div id="trait-bars" class="trait-bars"></div>
+      </aside>
+    </main>
+
+    <script src="second-degree.js"></script>
+  </body>
+</html>

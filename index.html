@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kinsley Personality Test</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="test-panel" aria-labelledby="page-title">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Kinsley Personality Test</p>
+            <h1 id="page-title">Personality Check</h1>
+          </div>
+          <div class="progress-readout" aria-live="polite">
+            <span id="progress-count">1 / 14</span>
+          </div>
+        </header>
+
+        <div class="progress-track" aria-hidden="true">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+
+        <section id="question-view" class="question-view">
+          <div class="statement-wrap">
+            <p id="question-kicker" class="question-kicker">Question 1</p>
+            <h2 id="question-text"></h2>
+          </div>
+
+          <fieldset class="scale-group" aria-labelledby="question-text">
+            <legend class="sr-only">Choose how much you agree</legend>
+            <div class="scale-labels" aria-hidden="true">
+              <span>Disagree</span>
+              <span>Agree</span>
+            </div>
+            <div id="answer-options" class="answer-options"></div>
+          </fieldset>
+
+          <div class="actions">
+            <button id="back-btn" class="ghost-btn" type="button">Back</button>
+            <button id="next-btn" class="primary-btn" type="button" disabled>Next</button>
+          </div>
+        </section>
+
+        <section id="result-view" class="result-view" hidden>
+          <div class="result-header">
+            <p class="eyebrow">Your Profile</p>
+            <p id="result-code" class="result-code"></p>
+            <h2 id="result-title">The Reflective Adapter</h2>
+          </div>
+
+          <div class="profile-grid">
+            <article class="profile-copy">
+              <p id="result-summary"></p>
+              <ul id="result-bullets"></ul>
+            </article>
+          </div>
+
+          <div class="actions">
+            <button id="restart-btn" class="ghost-btn" type="button">Retake</button>
+            <a class="primary-btn link-btn" href="second-degree.html">2nd Degree Investigation</a>
+          </div>
+        </section>
+      </section>
+
+      <aside class="study-rail" aria-label="Study controls" hidden>
+        <div class="dial-visual" aria-hidden="true">
+          <div class="dial-ring"></div>
+          <div class="dial-needle"></div>
+          <div class="dial-center"></div>
+        </div>
+        <h2>Your Preliminary Traits</h2>
+        <div id="trait-bars" class="trait-bars"></div>
+      </aside>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
