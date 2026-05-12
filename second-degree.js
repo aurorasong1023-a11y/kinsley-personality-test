@@ -173,7 +173,7 @@ const traitLabels = {
 const adapterProfile = {
   title: "The Calibrated Adapter",
   summary:
-    "Your Adapter pattern is less about being neutral and more about constantly calibrating. You can sense when a situation needs warmth, restraint, structure, or a small risk, and you often adjust before others notice that an adjustment is happening. This makes you appear easygoing, but underneath that ease is a private sorting process: what is expected, what is fair, what is worth saying, and what can be quietly carried for now.",
+    "You are a Calibrater! Among Adapters, being a Calibrater indicates that you navigate many life experiences with a heightened sense of caution and internal reflection. Even when your choices seem simple on the outside, you often spend more time than others mentally reviewing situations, conversations, and possible outcomes. Unsettling thoughts may stay with you longer than you would like, and you may find yourself returning to certain memories even after they have passed. In challenging situations, you often prefer to process your thoughts privately rather than seek social interaction right away. Because of your caution and reflective nature, you dislike having to adjust to unexpected and unfamiliar environments. However, once you have time to think and feel more secure, you can move forward with greater clarity and confidence.",
   bullets: [
     "You are most convincing when you can balance emotional awareness with practical action.",
     "You may look flexible from the outside, while privately tracking a clear line between compromise and self-erasure.",
